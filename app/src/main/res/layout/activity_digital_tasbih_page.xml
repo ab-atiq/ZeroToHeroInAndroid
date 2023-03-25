@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DigitalTasbihPage"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digital Tasbih"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/red"/>
+
+    <TextView
+        android:id="@+id/displayTasbih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="60dp"
+        android:gravity="center"
+        android:background="@color/red"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/addTashib"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:textSize="40dp"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/subTasbih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subtraction"
+        android:textAllCaps="false"
+        android:textSize="40dp"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/resetTasbih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textAllCaps="false"
+        android:textSize="40dp"
+        tools:ignore="MissingConstraints" />
+
+</LinearLayout>

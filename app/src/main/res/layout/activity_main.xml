@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="10dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/aboutBangladesh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About Bangladesh"/>
+            <Button
+                android:id="@+id/weightSum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weight Sum"/>
+            <Button
+                android:id="@+id/digitalTasbih"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Digital Tasbih"/>
+            <Button
+                android:id="@+id/imageVisibility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Image visibility"/>
+            <Button
+                android:id="@+id/toastShow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Toast Show"/>
+            <Button
+                android:id="@+id/webPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Website Show"/>
+            <Button
+                android:id="@+id/videoInYoutube"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Play Video in Youtube"/>
+            <Button
+                android:id="@+id/videoInApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Play Embedded Video in app"/>
+            <Button
+                android:id="@+id/videoPlayer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Video Player app"/>
+            <Button
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Relative Layout"/>
+            <Button
+                android:id="@+id/customStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Custom Style"/>
+            <Button
+                android:id="@+id/animationStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Animation Style"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
