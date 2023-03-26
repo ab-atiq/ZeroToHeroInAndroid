@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button aboutBangladesh,digitalTasbih,weightSum,imageVisibility,toastShow,webPage,videoInYoutube,videoInApp,videoPlayer,customStyle,animationStyle;
+    Button aboutBangladesh,digitalTasbih,weightSum,imageVisibility,toastShow,webPage,videoInYoutube,videoInApp,videoPlayer,customStyle,animationStyle,picassoLibrary,lottieAnimation;
 
 
     @SuppressLint("MissingInflatedId")
@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         videoPlayer=findViewById(R.id.videoPlayer);
         customStyle=findViewById(R.id.customStyle);
         animationStyle=findViewById(R.id.animationStyle);
+        picassoLibrary=findViewById(R.id.picassoLibrary);
+        lottieAnimation=findViewById(R.id.lottieAnimationPage);
 
         aboutBangladesh.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -113,6 +115,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, AnimationActivity.class));
+            }
+        });
+
+        picassoLibrary.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, PicassoLibraryPage.class));
+            }
+        });
+
+        lottieAnimation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, LottieAnimationPage.class));
             }
         });
 
