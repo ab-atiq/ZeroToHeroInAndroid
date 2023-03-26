@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculationOnShop"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+                <!--    Calculation on Shop profit and percentage-->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="How much buying price?"
+                            android:textSize="30dp"/>
+
+                        <EditText
+                            android:id="@+id/buyingPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Buying price"
+                            android:inputType="numberDecimal"
+                            android:textSize="20dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="How much selling price?"
+                            android:textSize="30dp"/>
+
+                        <EditText
+                            android:id="@+id/sellingPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Selling price"
+                            android:inputType="numberDecimal"
+                            android:textSize="20dp"
+                            />
+
+                        <Button
+                            android:id="@+id/calculationButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Calculation Profit and Profit Percentage"/>
+
+                        <TextView
+                            android:id="@+id/displayProfit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="25dp"/>
+
+        <!--        selling price calculate from profit percentage&ndash;&gt;-->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="How much buying price?"
+                            android:textSize="30dp"/>
+                        <EditText
+                            android:id="@+id/buyingPrice2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter Buying Price"
+                            android:textSize="20dp"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="How much profit you want?"
+                            android:textSize="30dp"/>
+                        <EditText
+                            android:id="@+id/percentProfit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Enter profit percent"
+                            android:textSize="20dp"/>
+                        <Button
+                            android:id="@+id/calculateButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Calculate"
+                            android:textSize="35dp"
+                            />
+                        <TextView
+                            android:id="@+id/displaySellingPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="25dp"/>
+                </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>

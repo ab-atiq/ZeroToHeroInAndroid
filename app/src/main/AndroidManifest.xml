@@ -16,6 +16,27 @@
         android:theme="@style/Theme.ZeroToHeroInAndroid"
         tools:targetApi="31">
         <activity
+            android:name=".BmiCalculation"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CalculationOnShop"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".UserInputPage"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".LottieAnimationPage"
             android:exported="false">
             <meta-data

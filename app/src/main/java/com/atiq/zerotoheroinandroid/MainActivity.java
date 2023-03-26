@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button aboutBangladesh,digitalTasbih,weightSum,imageVisibility,toastShow,webPage,videoInYoutube,videoInApp,videoPlayer,customStyle,animationStyle,picassoLibrary,lottieAnimation;
+    Button aboutBangladesh,digitalTasbih,weightSum,imageVisibility,toastShow,webPage,videoInYoutube,videoInApp,videoPlayer,customStyle,animationStyle,picassoLibrary,lottieAnimation,userInput,calculationOnShop,BmiCalculatorPage;
 
 
     @SuppressLint("MissingInflatedId")
@@ -33,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
         animationStyle=findViewById(R.id.animationStyle);
         picassoLibrary=findViewById(R.id.picassoLibrary);
         lottieAnimation=findViewById(R.id.lottieAnimationPage);
+        userInput=findViewById(R.id.userInput);
+        calculationOnShop=findViewById(R.id.calculationOnShop);
+        BmiCalculatorPage=findViewById(R.id.BmiCalculatorPage);
 
         aboutBangladesh.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -129,6 +132,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, LottieAnimationPage.class));
+            }
+        });
+
+        userInput.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, UserInputPage.class));
+            }
+        });
+
+        calculationOnShop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, CalculationOnShop.class));
+            }
+        });
+
+        BmiCalculatorPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, BmiCalculation.class));
             }
         });
 
