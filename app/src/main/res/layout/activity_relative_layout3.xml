@@ -16,7 +16,8 @@
     <ImageView
         android:layout_width="80dp"
         android:layout_height="80dp"
-        android:src="@drawable/home_page"
+        android:src="@drawable/cancel_icon"
+        android:background="@color/white"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_margin="10dp"/>
