@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayout2"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/bottomLayout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About Bangladesh"
+                android:textSize="35dp"
+                android:gravity="center"
+                android:background="@color/red"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bd_nature"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_bangladesh"
+                android:background="@drawable/bd_flag"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="বাংলাদেশকে জানুন"
+                android:textStyle="italic"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/visitable_places"
+                android:scaleType="centerCrop"
+                android:padding="5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_bd_bangla"
+                android:padding="10dp"
+                android:textColor="@color/red"/>
+
+            <Button
+                android:id="@+id/seeMore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="See More" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Like"
+            android:drawableTop="@drawable/like_icon"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Home"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/home_page"/>
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Profile"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/male_user"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
