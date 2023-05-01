@@ -101,6 +101,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="BMI calculator"/>
+            <Button
+                android:id="@+id/TextIntoVoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Text To Voice and Record"/>
+            <Button
+                android:id="@+id/zakatCalculation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zakat Calculation"/>
+            <Button
+                android:id="@+id/taxCalculation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tax Calculation"/>
+            <Button
+                android:id="@+id/alertActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alert Dialog"/>
 
         </LinearLayout>
     </ScrollView>
