@@ -11,7 +11,10 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button aboutBangladesh,digitalTasbih,weightSum,imageVisibility,toastShow,webPage,videoInYoutube,videoInApp,videoPlayer,relativeLayout,customStyle,animationStyle,picassoLibrary,lottieAnimation,userInput,calculationOnShop,BmiCalculatorPage,TextIntoVoice;
+    Button aboutBangladesh,digitalTasbih,weightSum,imageVisibility,
+            toastShow,webPage,videoInYoutube,videoInApp,videoPlayer,relativeLayout,
+            customStyle,animationStyle,picassoLibrary,lottieAnimation,userInput,
+            calculationOnShop,BmiCalculatorPage,TextIntoVoice, firebaseAuthentication;
 
 
     @SuppressLint("MissingInflatedId")
@@ -38,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         BmiCalculatorPage = findViewById(R.id.BmiCalculatorPage);
         relativeLayout = findViewById(R.id.relativeLayout);
         TextIntoVoice=findViewById(R.id.TextIntoVoice);
+        firebaseAuthentication=findViewById(R.id.firebaseAuthentication);
 
         aboutBangladesh.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -169,6 +173,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, TextIntoVoice.class));
+            }
+        });
+
+        firebaseAuthentication.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), FirebaseAuthentication.class));
             }
         });
 

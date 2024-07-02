@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirebaseAuthentication"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#22b2ff"
+    >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sing In"
+            android:gravity="center"
+            android:textSize="30dp"
+            />
+        <EditText
+            android:id="@+id/signInEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:hint="Email"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            />
+        <EditText
+            android:id="@+id/signInPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:hint="Password"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            />
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:layout_marginTop="10dp"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            />
+<!--        // Are you not registered? Sign up-->
+        <TextView
+            android:id="@+id/signUpTextView"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="If you are new user, please register or sign up"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:cursorVisible="true"
+            >
+        </TextView>
+        <ProgressBar
+            android:id="@+id/signInProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            />
+
+</LinearLayout>

@@ -121,6 +121,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Alert Dialog"/>
+            <Button
+                android:id="@+id/firebaseAuthentication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Firebase Authentication"/>
 
         </LinearLayout>
     </ScrollView>
